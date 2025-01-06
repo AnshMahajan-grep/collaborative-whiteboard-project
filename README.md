@@ -30,13 +30,6 @@ You can access the live version of the whiteboard here: [Collaborative Whiteboar
 - **Brush Settings**: Use the color picker to change the brush color, and the slider to adjust the brush size.
 - **Clear Canvas**: Click the "Clear Canvas" button to remove all drawings from the board.
 
-## Contributing
-
-While contributions are not currently open, feel free to explore and use this tool for your personal or collaborative work. If you would like to propose any improvements or enhancements, feel free to open an issue.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
