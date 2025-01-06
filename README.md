@@ -22,7 +22,7 @@ This project is deployed on Render and can be accessed via the link below.
 
 ### Live Demo
 
-You can access the live version of the whiteboard here: [Collaborative Whiteboard](https://collaborative-whiteboard-8bte.onrender.com)
+You can access the live version of the whiteboard here: [Collaborative Whiteboard](https://collaborative-whiteboard-project.onrender.com)
 
 ## Usage
 

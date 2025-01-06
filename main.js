@@ -7,7 +7,7 @@ import { io } from 'socket.io-client';
 // Setting the Socket.IO server URL dynamically
 const SOCKET_SERVER = window.location.hostname === 'localhost'
     ? 'http://localhost:3000'
-    : 'https://collaborative-whiteboard-8bte.onrender.com';
+    : 'https://collaborative-whiteboard-project.onrender.com';
 
 // Establishing the socket connection
 const socket = io(SOCKET_SERVER, {
