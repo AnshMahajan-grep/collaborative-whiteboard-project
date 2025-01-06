@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #3498db; 
+    --secondary-color: #f5f5f5; 
+    --hover-color: #2980b9; 
+    --font-family: 'Verdana', sans-serif; 
+    --font-size: 15px; 
+    --border-radius: 8px; 
+    --panel-bg: #e9ecef; 
+}
+
+/* General Reset */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: var(--font-family);
+    background-color: #f0f2f5; 
+    color: #444; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Header and Footer Styles */
+header, footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem; 
+    color: var(--primary-color);
+}
+
+footer p {
+    font-size: 0.9rem; 
+    color: #666;
+}
+
+/* Tool Panel */
+.tool-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--panel-bg);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons and Inputs */
+.tool-item input[type="color"],
+.tool-item input[type="range"],
+.tool-item button {
+    padding: 0.6rem 1rem; 
+    font-size: 0.9rem; 
+    border-radius: var(--border-radius);
+    border: 1px solid #ddd;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.tool-item button:hover,
+.tool-item input:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.tool-item button:active {
+    transform: scale(0.96); 
+}
+
+/* Drawing Area */
+.drawing-area {
+    position: relative;
+    width: 100%;
+    max-width: 900px; 
+    height: 75vh; 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+/* Canvas Styling */
+canvas {
+    width: 100%;
+    height: 100%;
+    cursor: crosshair;
+    background-color: #ffffff;
+    border-radius: var(--border-radius);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tool-panel {
+        flex-direction: column;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212; 
+        color: #fff;
+    }
+
+    header, footer {
+        background-color: #1f1f1f;
+    }
+
+    .tool-panel {
+        background-color: #2a2a2a;
+    }
+
+    button, input {
+        background-color: #333;
+        color: #fff;
+    }
+}
